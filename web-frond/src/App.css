@@ -1,42 +1,399 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+@import url('https://fonts.googleapis.com/css?family=Alex+Brush|Overpass+Mono:600,700');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+body {
+  overflow-x: hidden;
+}
+
+/* GLOBAL */
+h2 {
+  margin-top: 0;
+}
+
+button {
+  border: 0;
+  background: 0;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* HEADER */
+header {
+  min-height: 1vh;
+  
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+}
+.carousel-item-custom {
+  min-height: 100vh;
+  background: linear-gradient(to bottom,rgba(190, 127, 64, 0.724), transparent),url('https://i.postimg.cc/NFqNVDXn/the-springs-resort-hotel.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+}
+.carousel-item-custom2 {
+  min-height: 100vh;
+  background: linear-gradient(to bottom,rgba(190, 127, 64, 0.724), transparent),url('https://i.postimg.cc/K8MmQ3vs/spa.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+}
+.carousel-item-custom3 {
+  min-height: 100vh;
+  background: linear-gradient(to bottom,rgba(190, 127, 64, 0.724), transparent),url('https://i.postimg.cc/nV9bPSy3/springsresorthotspringscostarica-13.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+}
+.carousel-item-custom4 {
+  min-height: 100vh;
+  background: linear-gradient(to bottom,rgba(190, 127, 64, 0.724), transparent),url('https://i.postimg.cc/cJcskcLL/Whats-App-Image-2024-03-27-at-2-14-25-PM.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+/* NAV */
+nav {
+  padding: 15px 35px;
+  display: flex;
+  position: relative;
+}
+
+nav h2 {
+  margin-bottom: 0;
+  flex: 1;
+  letter-spacing: 3px;
+  font-family: 'Overpass Mono', monospace !important;
+}
+
+#logo {
+  background-image: url('https://i.postimg.cc/x1j0Pn1N/santuaryspa-logo2.png');
+  background-size: contain; /* Ajusta el tamaño de la imagen */
+  background-repeat: no-repeat; /* Evita la repetición de la imagen */
+  display: inline-block; /* Para que el enlace ocupe solo el espacio necesario */
+  width: 100px; /* Ancho deseado para el logo */
+  height: 50px; /* Altura deseada para el logo */
+}
+
+.nav-button {
+  color: #c0c0c0;
+  font-size: 23px;
+}
+
+nav div {
+  background: rgba(0, 0, 0, .9);
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
   text-align: center;
+  transform: scale(0);
+  opacity: 0;
+  transition: opacity .2s;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+nav div ul {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav div ul .exit-menu {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: lightgray;
+  font-size: 20px;
+  padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+nav div ul li {
+  font-family: 'PT Sans', sans-serif !important;
+  text-transform: uppercase;
 }
 
-.card {
-  padding: 2em;
+nav div ul li a {
+  display: block;
+  color: lightgray;
+  padding: 15px 5px;
+  transition: all .4s;
 }
 
-.read-the-docs {
-  color: #888;
+nav div ul li a:hover, nav div ul li .active:hover {
+  color: rgb(190, 128, 64);
+  border-bottom-color: rgb(190, 128, 64);
+}
+
+.horizontal-list {
+  list-style: none; /* Elimina los puntos de la lista */
+  padding: 0; /* Elimina el relleno */
+  margin: 0; /* Elimina los márgenes */
+
+  /* Cambia el flujo del diseño a horizontal */
+  display: flex;
+}
+
+.horizontal-list li {
+  /* Opcional: Agrega espaciado entre los elementos */
+  margin-right: 10px;
+}
+
+/* Estilos para los enlaces */
+.horizontal-list li a {
+  text-decoration: none; /* Elimina la subrayado de los enlaces */
+  color: black; /* Color del texto */
+}
+
+/* Estilos para el elemento activo */
+.horizontal-list li a.active {
+  font-weight: bold; /* Texto en negrita */
+}
+
+/* CENTER HEADER TEXT */
+.center {
+  line-height: 0;
+  margin: auto;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.center h1 {
+  font-family: 'Alex Brush', cursive !important;
+  color: rgb(4, 3, 3);
+  font-size: 80px;
+  padding-top: 115px;
+  margin-bottom: -15px;
+}
+
+.center h2 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 28px;
+}
+
+#asterisk {
+  color: rgb(190, 128, 64);
+  line-height: 0.5;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+#asterisk::before, #asterisk::after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  height: 1px;
+  width: 0%;
+  opacity: 0;
+  background: rgb(255, 255, 255);
+}
+
+#asterisk::before {
+  margin-right: 10px;
+}
+
+#asterisk::after {
+  margin-left: 10px;
+}
+
+.center p {
+  text-transform: uppercase;
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+nav div.show {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* CLASSES */
+.custom-font1 {
+  font-family: 'Alex Brush', cursive;
+  color: rgb(190, 128, 64);
+  font-size: 65px;
+  line-height: 0;
+}
+.custom-font2 {
+  font-family: 'Alex Brush', cursive;
+  color: rgb(0, 0, 0);
+  font-size: 65px;
+  line-height: 0;
+}
+
+.add-padding {
+  padding: 25px;
+}
+
+.center-text {
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 30px;
+  color: rgb(77, 77, 77);
+}
+
+.center-text h2 {
+  margin-top: 25px;
+  line-height: 0;
+}
+
+.center-text p {
+  margin-top: 0;
+  font-family: 'PT Sans', sans-serif;
+  line-height: 1.5;
+}
+
+.center-text a {
+  color: rgb(190, 128, 64);
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-bottom: solid 2px rgb(190, 128, 64);
+}
+
+.add-flex {
+  display: flex;
+  /* flex-direction: column;
+  align-items: center; */
+}
+
+.add-flex .stuffed-cherries {
+  background: url('https://i.postimg.cc/Dz0H5tgf/santuaryspa-logo.png') no-repeat center center;
+  background-size: contain;
+  margin-top: 135px;
+  height: 245px;
+  width: 440px;
+}
+
+.center-h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-h1 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  letter-spacing: 5px;
+}
+
+.custom-h1 span {
+  letter-spacing: 0;
+}
+
+/* TASTEFUL RECIPES SECTION */
+.bread-background1 {
+  background: rgb(0, 0, 0) url('http://www.performerprosites.com/development/clients/showpalace/wp-content/uploads/2014/05/tasteful-recipies-dinner-theatre.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 500px;
+}
+.bread-background2 {
+  background:  rgb(190, 128, 64) url('http://www.performerprosites.com/development/clients/showpalace/wp-content/uploads/2014/05/tasteful-recipies-dinner-theatre.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 500px;
+}
+
+.custom1 {
+  color: rgb(252, 252, 252); /* Cambia el color del texto a azul */
+  font-size: 18px; /* Cambia el tamaño del texto a 18 píxeles */
+  max-width: 840px; /* Establece un ancho máximo para el texto */
+  margin: 0 auto; /* Centra el texto horizontalmente en la página */
+}
+.custom2 {
+  color: rgb(0, 0, 0); /* Cambia el color del texto a azul */
+  font-size: 18px; /* Cambia el tamaño del texto a 18 píxeles */
+  max-width: 640px; /* Establece un ancho máximo para el texto */
+  margin: 0 auto; /* Centra el texto horizontalmente en la página */
+}
+.carousel-image {
+  width: 100%;
+  width: 500px; /* Define el ancho deseado para las imágenes */
+  height: 400px; /* Define la altura deseada para las imágenes */
+}
+
+.carousel-container {
+  display: flex; /* Hace que los elementos secundarios se coloquen en línea */
+  justify-content: center; /* Centra el Carousel horizontalmente */
+  align-items: center; /* Centra el Carousel verticalmente */
+  height: 105vh; /* Establece la altura del contenedor al 100% del viewport */
+  overflow-x: 800%; /* Agrega una barra de desplazamiento horizontal si es necesario */
+}
+
+.carousel {
+  width: 100%; 
+}
+
+/* .carousel .carousel-inner {
+  display: flex; 
+} */
+
+/* .carousel .carousel-item {
+  height: 100%; 
+} */
+
+
+
+/* MENU SECTION */
+.menu {
+  padding: 30px;
+}
+
+.menu-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* grid-gap: 10px; */
+}
+
+.menu-images img {
+  width: 100%;
+  width: 300px; /* Define el ancho deseado para las imágenes */
+  height: 200px; /* Define la altura deseada para las imágenes */
+  padding: 3px;
+}
+
+/* THE PERFECT BLEND SECTION */
+.cake-background {
+  background: rgb(0, 0, 0) url('http://www.rustiquerichmond.co.uk/wp-content/uploads/2014/06/desert.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 500px;
 }
