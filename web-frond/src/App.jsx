@@ -2,22 +2,26 @@ import { useState } from 'react'
 import * as React from 'react';
 import './App.css';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-// import Navbar from './componentInfo/Navbar';
-import GeneralInfo from './componentInfo/Information'; // Ajusta la ruta de importación según la estructura de tus archivos
+import GeneralInfo from './componentInfo/Information';
 import Experiences from './componentInfo/experiencias';
-
+import RatingBox from './componentInfo/RatingBox';
 
 function App() {
- return(
-  <div className="App">
+  return (
+    <div className="App">
       <BrowserRouter>
         <Routes>
-        <Route path='/' element={<GeneralInfo/>} />
-        <Route path="/experiencias" element={<Experiences/>} />
+          <Route path='/' element={<GeneralInfo />} />
+          <Route path="/experiencias" element={
+            <div>
+              <Experiences />
+              <RatingBox />
+            </div>
+          } />
         </Routes>
-        </BrowserRouter>
+      </BrowserRouter>
     </div>
- )
+  )
 }
 
 export default App;

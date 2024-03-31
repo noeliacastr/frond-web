@@ -1,13 +1,22 @@
-import React from 'react';
-import '../experiencias.css';
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 
+import "../experiencias.css";
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+/>;
 
-const Experiencias = ({ title, imageSrc, altText, description, rating, reviewsLink }) => {
+const Experiencias = ({
+  title,
+  imageSrc,
+  altText,
+  description,
+  rating,
+  reviewsLink,
+}) => {
   return (
-    <div className="card">
+    <div className="card" style={{ cursor: 'default !important;' }}>
       <a href={reviewsLink} target="_blank" className="main-link">
-        <h2 className="title">{title}</h2>
+        <h2  style={{ cursor: 'default !important' }} className="title">{title}</h2>
         <div className="image">
           <img src={imageSrc} alt={altText} />
         </div>
@@ -19,7 +28,11 @@ const Experiencias = ({ title, imageSrc, altText, description, rating, reviewsLi
           <span key={index} className="fas fa-star" aria-hidden="true"></span>
         ))}
         {[...Array(5 - rating)].map((_, index) => (
-          <span key={index + rating} className="far fa-star" aria-hidden="true"></span>
+          <span
+            key={index + rating}
+            className="far fa-star"
+            aria-hidden="true"
+          ></span>
         ))}
       </div>
     </div>
@@ -30,6 +43,25 @@ const Experiencias = ({ title, imageSrc, altText, description, rating, reviewsLi
 const ExperienciasList = () => {
   return (
     <div className="card-slider">
+      <h1 className="custom-h1 alex-brush">
+        <span className="custom-font2">
+          Descubre las Experiencias de Otros en Sanctuary Spa
+        </span>
+      </h1>
+
+      <span>
+        <p
+          className="custom1"
+          style={{color: "black", fontSize: "20"}}
+        >
+          En Santuary Spa, nos enorgullecemos de ofrecer experiencias
+          transformadoras que rejuvenecen el cuerpo, revitalizan la mente y
+          renuevan el espíritu. Pero no solo tomamos nuestra palabra; queremos
+          que escuches de aquellos que han vivido la magia de nuestro oasis de
+          bienestar.
+        </p>
+      </span>
+
       <Experiencias
         title="First Experiencias title"
         imageSrc="https://traveler.marriott.com/es/wp-content/uploads/sites/2/2021/10/MC_MDEMC_Marriott_Medellin_Spa_1920x1080.jpg"
