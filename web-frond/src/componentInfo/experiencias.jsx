@@ -1,4 +1,3 @@
-
 import "../experiencias.css";
 <link
   rel="stylesheet"
@@ -6,30 +5,26 @@ import "../experiencias.css";
 />;
 
 const Experiencias = ({
-  title,
+  nombreUsuario,
   imageSrc,
-  altText,
-  description,
-  rating,
-  reviewsLink,
+  mensaje,
+  calificacion,
 }) => {
   return (
     <div className="card" style={{ cursor: 'default !important;' }}>
-      <a href={reviewsLink} target="_blank" className="main-link">
-        <h2  style={{ cursor: 'default !important' }} className="title">{title}</h2>
-        <div className="image">
-          <img src={imageSrc} alt={altText} />
-        </div>
-      </a>
-      <p className="description">{description}</p>
-      <div className="rating">
-        <span className="sr-only">Rating: {rating} out of 5 stars</span>
-        {[...Array(rating)].map((_, index) => (
+      <h2 style={{ cursor: 'default !important' }} className="nombreUsuario">{nombreUsuario}</h2>
+      <div className="image">
+        <img src={imageSrc}/>
+      </div>
+      <p className="mensaje">{mensaje}</p>
+      <div className="calificacion">
+        <span className="sr-only">calificacion: {calificacion} de 5 estrellas</span>
+        {[...Array(calificacion)].map((_, index) => (
           <span key={index} className="fas fa-star" aria-hidden="true"></span>
         ))}
-        {[...Array(5 - rating)].map((_, index) => (
+        {[...Array(5 - calificacion)].map((_, index) => (
           <span
-            key={index + rating}
+            key={index + calificacion}
             className="far fa-star"
             aria-hidden="true"
           ></span>
@@ -39,7 +34,6 @@ const Experiencias = ({
   );
 };
 
-/* datos a enviar al elemento Experiencias*/
 const ExperienciasList = () => {
   return (
     <div className="card-slider">
@@ -63,44 +57,34 @@ const ExperienciasList = () => {
       </span>
 
       <Experiencias
-        title="First Experiencias title"
+        nombreUsuario="Lucia Lopez Lopez"
         imageSrc="https://traveler.marriott.com/es/wp-content/uploads/sites/2/2021/10/MC_MDEMC_Marriott_Medellin_Spa_1920x1080.jpg"
-        altText="Small succulent with long, spikey leaves in a mug-like planter."
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        rating={3}
-        reviewsLink="https://accessible360.com/#reviews"
+        mensaje="¡Experiencia transformadora! ✨ ame el lugar"
+        calificacion={4}
       />
       <Experiencias
-        title="Second Experiencias title"
+        nombreUsuario="Blair Rojas"
         imageSrc="https://images.unsplash.com/photo-1583106617217-406e2c5656fd?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        altText="Small succulent with long, spikey leaves in a mug-like planter."
-        description="Lorem ipsum dolor sit amet, consectetur."
-        rating={4}
-        reviewsLink="https://accessible360.com/#reviews"
+        mensaje="Renove mi cuerpo, mente y espíritu en Santuary Spa."
+        calificacion={5}
       />
       <Experiencias
-        title="Third Experiencias title"
+        nombreUsuario="Emily Johnson"
         imageSrc="https://chillpepperhotel.co.za/wp-content/uploads/2022/10/Chilled-Indulgence-Package.webp"
-        altText="Small succulent with long, spikey leaves in a mug-like planter."
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        rating={2}
-        reviewsLink="https://accessible360.com/#reviews"
+        mensaje="Every detail of the experience was gratifying. 👌"
+        calificacion={2}
       />
       <Experiencias
-        title="Fourth Experiencias title"
+        nombreUsuario="Alexander Smith"
         imageSrc="https://chillpepperhotel.co.za/wp-content/uploads/2022/10/Drift-Away-Package.webp"
-        altText="Small succulent with long, spikey leaves in a mug-like planter."
-        description="Lorem ipsum dolor sit amet, consectetur."
-        rating={5}
-        reviewsLink="https://accessible360.com/#reviews"
+        mensaje="Transforming experience that has left an indelible mark on my heart! ☮️ I hope to return soon"
+        calificacion={5}
       />
       <Experiencias
-        title="Fifth Experiencias title"
+        nombreUsuario="Jacques Dubois"
         imageSrc="https://www.aladinia.com/blog/wp-content/uploads/2019/12/spa-madrid-parejas-1.jpg"
-        altText="Small succulent with long, spikey leaves in a mug-like planter."
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        rating={5}
-        reviewsLink="https://accessible360.com/#reviews"
+        mensaje="Cada detalle de la experiencia fue gratificante y enriquecedor. Desde la profesionalidad del personal hasta la belleza del lugar, todo contribuyó a crear un ambiente encantador y rejuvenecedor."
+        calificacion={5}
       />
     </div>
   );

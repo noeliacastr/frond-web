@@ -6,16 +6,12 @@ const RatingBox = () => {
   const [rating, setRating] = useState(0);
   const [alias, setAlias] = useState('');
   const [review, setReview] = useState('');
-  const [error, setError] = useState('');
-  const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = () => {
 
     setRating(0);
     setAlias('');
     setReview('');
-    setError('');
-    setSubmitted(true);
   };
 
   return (
