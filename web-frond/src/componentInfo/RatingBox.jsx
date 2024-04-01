@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import '../ratingBox.css';
+import Swal from 'sweetalert2';
+
 
 
 const RatingBox = () => {
@@ -12,6 +14,13 @@ const RatingBox = () => {
     setRating(0);
     setAlias('');
     setReview('');
+
+    Swal.fire({
+      icon: 'success',
+      title: '¡Gracias por compartir tu experiencia!',
+      text: 'Comentario pendiente de aprobación',
+      confirmButtonText: 'Aceptar',
+    });
   };
 
   return (
