@@ -31,7 +31,7 @@ const RatingBox = () => {
 
         <fieldset>
           <span className="star-cb-group">
-          <h1 style={{  margin: '0px', textAlign: 'center' }}>Tu opinion es importante para nosotros</h1>
+          <h1 style={{  margin: '0px', textAlign: 'center', fontSize:"20px" }}>Tu opinion es importante para nosotros</h1>
             {[...Array(5)].map((_, index) => (
               <React.Fragment key={index}>
                 <input

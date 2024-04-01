@@ -37,16 +37,16 @@ const Experiencias = ({
 const ExperienciasList = () => {
   return (
     <div className="card-slider">
-      <h1 className="custom-h1 alex-brush">
-        <span className="custom-font2">
+      <h1 className="custom-font alex-brush center-text">
+        <span className="custom-font2 center-text"style={{color: "rgb(190, 128, 64)"}}>
           Descubre las Experiencias de Otros en Sanctuary Spa
         </span>
       </h1>
 
       <span>
         <p
-          className="custom1"
-          style={{color: "black", fontSize: "20"}}
+          className="custom1 center-text"
+          style={{color: "black", fontSize: "20",  marginLeft: "10%", marginBottom:"5%"}}
         >
           En Santuary Spa, nos enorgullecemos de ofrecer experiencias
           transformadoras que rejuvenecen el cuerpo, revitalizan la mente y
