@@ -1,10 +1,11 @@
 import { useState } from 'react'
 import * as React from 'react';
 import './App.css';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Router } from 'react-router-dom';
 // import Navbar from './componentInfo/Navbar';
 import GeneralInfo from './componentInfo/Information'; // Ajusta la ruta de importación según la estructura de tus archivos
-
+import GenerarMenu from './componentInfo/GenerarMenu';
+import MenuItem from './componentInfo/MenuItem';
 
 
 function App() {
@@ -13,8 +14,9 @@ function App() {
       <BrowserRouter>
         <Routes>
         <Route path='/' element={<GeneralInfo/>} />
+        <Route path='/menu' element={<MenuItem/>} />
         </Routes>
-        </BrowserRouter>
+      </BrowserRouter>
     </div>
  )
 }

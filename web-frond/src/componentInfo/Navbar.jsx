@@ -1,4 +1,5 @@
-import React from 'react';
+
+import * as React from 'react';
 import '../App.css';
 
 const Navbar = () => {
@@ -8,11 +9,11 @@ const Navbar = () => {
         <button className="nav-button fa fa-bars"></button>
         
             <ul className="horizontal-list">
-                <li><a href="#" className="active">welcome</a></li>
-                <li><a href="#">menu</a></li>
-                <li><a href="#">reservations</a></li>
-                <li><a href="#">news</a></li>
-                <li><a href="#">contact</a></li>
+                <li><a href="/" className="active">Santuary Spa</a></li>
+                <li><a href="/menu">Menu</a></li>
+                <li><a href="#">Reservaciones</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contactenos</a></li>
             </ul>
         
     </nav>

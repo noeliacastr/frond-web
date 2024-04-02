@@ -331,7 +331,12 @@ nav div.show {
   background-attachment: fixed;
   height: 500px;
 }
-
+.bread-background3{
+  background:  rgb(255, 255, 255) url('http://www.performerprosites.com/development/clients/showpalace/wp-content/uploads/2014/05/tasteful-recipies-dinner-theatre.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 500px;
+}
 .custom1 {
   color: rgb(252, 252, 252); /* Cambia el color del texto a azul */
   font-size: 18px; /* Cambia el tamaño del texto a 18 píxeles */
@@ -397,3 +402,70 @@ nav div.show {
   background-attachment: fixed;
   height: 500px;
 }
+
+/*CardMENUS*/
+.card-image img{
+  width: 0%;
+  width: 200px; /* Define el ancho deseado para las imágenes */
+  height: 190px; /* Define la altura deseada para las imágenes */
+  padding: 2px;
+}
+.card-container{
+    position: relative;
+    margin: 5px;
+    display: flex !important;
+    flex-direction: column;
+    border-radius: 50px;
+    border: 1px solid rgba(0,0,0,.2);
+    background-color: white;
+    text-decoration: none;
+    color: rgba(0,0,0,.9);
+    transition: all .1s linear;
+    box-shadow: 0 8px 10px rgba(243, 243, 243, 0.3); /* sombra trasera */
+}
+
+.textMenu{
+  text-align: center;
+  margin: 0%;
+}
+.textMenu h3{
+  margin: 0%;
+  font-size: 40px;
+  font-family: 'Alex Brush', cursive;
+}
+
+/*Footer*/
+.footer-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer{
+  background-color: #000000;
+  color: #fff;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+.footer-section{
+  flex: 1;
+  margin: 0 1rem;
+}
+
+.footer-section h3 {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section p {
+  font-size: 0.8rem;
+}
+
