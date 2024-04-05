@@ -93,9 +93,7 @@ body { background-color: #f5f5f5; padding: 20px; }
       font-weight: bold;
     }
 
-      .card .nombreUsuario:hover {
-        text-decoration: underline;
-      }
+
 
     /** Experiencia image */
     .card .image {
@@ -127,16 +125,4 @@ body { background-color: #f5f5f5; padding: 20px; }
       opacity: .8;
     }
 
-
-
-
-    /** calificacion */
-    .card .calificacion {
-      margin: 10px 0 15px 10px;
-      color: orange;
-      font-size: 12px;
-    }
-
 }
-
-
