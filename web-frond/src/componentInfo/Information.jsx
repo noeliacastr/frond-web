@@ -6,6 +6,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // Importa el archivo CSS de AOS para aplicar estilos por defecto
 import Navbar from "./Navbar";
 import '../App.css';
+import Footer from './Footer';
 
 const GeneralInfo = () => {
     AOS.init();
@@ -177,7 +178,7 @@ const GeneralInfo = () => {
             </div>
             
         </section>
-
+        <Footer />
         
         </>
     );
