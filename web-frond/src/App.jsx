@@ -5,6 +5,10 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import GeneralInfo from './componentInfo/Information';
 import Experiences from './componentInfo/experiencias';
 import RatingBox from './componentInfo/RatingBox';
+import MenuItem from './componentInfo/MenuItem';
+import GenerarMenu from './componentInfo/GenerarMenu';
+import Footer from './componentInfo/Footer';
+
 
 function App() {
   return (
@@ -12,10 +16,12 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<GeneralInfo />} />
-          <Route path="/experiencias" element={
+          <Route path='/menu' element={<MenuItem/>} />
+          <Route path='/experiencias' element={
             <div>
               <Experiences />
               <RatingBox />
+              <Footer/>
             </div>
           } />
         </Routes>

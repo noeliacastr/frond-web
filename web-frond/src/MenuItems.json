@@ -1,0 +1,93 @@
+[
+    {
+      "title": "Honeymoon",
+      "description": "Exfoliante corporal de chocolate, masaje con piedras y mini faciales.",
+      "price": 502,
+      "imageUrl": "https://i.postimg.cc/gjtqq0ND/masaje5.jpg"
+    },
+    {
+      "title": "Spring Deluxe",
+      "description": "Masaje de Bambú con Masaje Facial Con Aceite De Té Verde Y Kobido",
+      "price": 315,
+      "imageUrl": "https://i.postimg.cc/9M82hY2F/Bambuterapia-scaled.jpg"
+    },
+    {
+        "title": "Volcanic Health",
+        "description": "Masaje con Barro Volcánico y Facia de Arcilla Volcánica 100% natural.",
+        "price": 295,
+        "imageUrl": "https://i.postimg.cc/C1SFsKhk/image.jpg"
+    },
+    {
+        "title": "Tropical Bliss",
+        "description": "Exfoliante corporal de coco, coco sueco Masaje y Facial de Miel Orgánica",
+        "price": 300,
+        "imageUrl": "https://i.postimg.cc/TPGwC0QK/228582.jpg"
+    },
+    {
+        "title": "Springs Clay",
+        "description": "Masaje con Arcilla Volcánica cosechada de nuestras propias Aguas Termales",
+        "price": 160,
+        "imageUrl": "https://i.postimg.cc/xX0p4hFj/ret-bdb3355.jpg"
+    },
+    {
+        "title": "Organic Coffee",
+        "description": " Exfoliante de cafe. Mejora la circulación celular y proporciona antioxidantes.",
+        "price": 160,
+        "imageUrl": "https://i.postimg.cc/bdH3X8SX/entorno-spa-inspirado-cafe-botella-aceite-esencial-cafe-lista-incorporarse-masajes-tratamientos-que.jpg"
+    },
+    {
+        "title": "Tropical Fruits",
+        "description": "La combinación natural de frutas y los aceites orgánicos limpian y nutre la piel.",
+        "price": 180,
+        "imageUrl": "https://i.postimg.cc/pV8T8yDG/fruits-of-Costa-Rica.jpg"
+    },
+    {
+        "title": "Hot Stones",
+        "description": "Movimientos suecos y acupresión combinados con piedras especiales.",
+        "price": 220,
+        "imageUrl": "https://i.postimg.cc/YqkBDzPF/piedras-calientes-masaje-hot-stone.jpg"
+    },
+    {
+        "title": "Four Hands",
+        "description": "¡Inolvidable! Trabajando ambos lados del cuerpo con dos terapeutas.",
+        "price": 280,
+        "imageUrl": "https://i.postimg.cc/GpkmsmTw/4manos.jpg"
+    },
+    {
+        "title": "Deep Tissue",
+        "description": "Masaje para liberar patrones de tensión cronicos en el de tejido muscular.",
+        "price": 180,
+        "imageUrl": "https://i.postimg.cc/BbXsK18J/Deep-Tissue-Square-scaled.jpg"
+    },
+    {
+        "title": "Kobido Imperial",
+        "description": "El proceso proporciona un 'Natural Lift' gracias a la tecnica japonesa kobido.",
+        "price": 195,
+        "imageUrl": "https://i.postimg.cc/y8zdwvg9/kobido.jpg"
+    },
+    {
+        "title": "Reflexology",
+        "description": "Utiliza técnicas de puntos en los pies que corresponden a órganos.",
+        "price": 140,
+        "imageUrl": "https://i.postimg.cc/907gh28Y/Foot-Reflexology-Massage-downtown-san-diego.jpg"
+    },
+    {
+        "title": "Couples Massage",
+        "description": "Masaje de cuerpo completo con un sistema de movimientos para la circulación.",
+        "price": 390,
+        "imageUrl": "https://i.postimg.cc/GpTXYdrw/Untitleddesign-2-32-460x-2x.png"
+    }, 
+    {
+        "title": "Facial Masks",
+        "description": "Faciales para refrescar y rejuvenecer la piel para una vida más saludable.",
+        "price": 100,
+        "imageUrl": "https://i.postimg.cc/bYnd5MYy/woman-doing-facial-mask-321217.jpg"
+    },
+    {
+        "title": "Manicure Pedicure",
+        "description": "Masaje completo de manos y pies, con hidratacion, exfoliacion y terminado.",
+        "price": 90,
+        "imageUrl": "https://i.postimg.cc/W4pXWgMV/shutterstock-156005612.jpg"
+    } 
+
+  ]

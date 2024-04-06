@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Carousel } from 'react-bootstrap'; // Importa el Carousel de react-bootstrap
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Importa el archivo CSS de AOS para aplicar estilos por defecto
-
 import Navbar from "./Navbar";
 import '../App.css';
 
@@ -85,8 +84,9 @@ const GeneralInfo = () => {
             <div className="center-text">
                 <h1><span className="custom-font alex-brush">Discover</span><br />MENU</h1>
                 <h2>*</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae distinctio possimus tempore voluptatem, quo repellendus quas culpa quasi, hic optio sapiente molestias necessitatibus, aliquam excepturi consequatur a voluptates quam beatae!</p>
-                <a href="#">view the full menu</a>
+                <p>¡Diseñado para brindarte una experiencia de rejuvenecimiento completa, nuestro menú ofrece una amplia gama de tratamientos 
+                que satisfacen tus necesidades individuales y te transportan a un estado de total serenidad!</p>
+                <a href="/menu">View the full menu</a>
             </div>
         </section>
         <section className="add-flex reservation-section">
