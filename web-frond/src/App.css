@@ -438,6 +438,7 @@ nav div.show {
 .footer-content{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: flex-start;
 }
 
@@ -468,3 +469,10 @@ nav div.show {
 .footer-section p {
   font-size: 0.8rem;
 }
+
+@media (max-width: 768px) {
+  .footer-section {
+    flex-basis: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }}
